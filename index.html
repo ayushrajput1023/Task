@@ -1,0 +1,294 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Admin</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body onload="cal()">
+    <nav class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow">
+
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"><img class="logo" src="Images/sunset.png" alt="">GyanUday</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="input-group mb-3 setwidth">
+  <div class="input-group-prepend setme">
+    <span class="input-group-text border leftborder">
+  <a class="dropdown-toggle down" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    All Category
+  </a>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">1</a>
+    <a class="dropdown-item" href="#">2</a>
+    <a class="dropdown-item" href="#">3</a>
+  </div>
+    </span>
+  </div>
+  <input type="text" class="form-control"  placeholder="Search">
+  <div class="input-group-append">
+    <span class="input-group-text rightborder"><img type="button" class="searchlogo" src="Images/search.png" alt=""></span>
+  </div>
+</div>
+
+</nav>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse navcolor">
+      <div class="sidebar-sticky pt-3">
+        <nav class="nav">
+          <span class="ml-auto"><img class="bell" src="Images/notification.png" alt=""></span>
+          <span><img class="bell" src="Images/email.png" alt=""></span>
+            <ul class="navbar-nav px-3">
+              <li class="nav-item text-nowrap">
+                  <div class="btn-group">
+                    <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+                      <img src="Images/sunset.png" alt="" width="20px;">
+                    </button>
+                  </div>
+
+              </li>
+            </ul>
+        </nav>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <br>
+            <a class="nav-link navitem" href="#">
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitem" href="#">
+              My Task
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitem" href="#">
+              My Project
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitem" href="#">
+              My Wallet
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitem" href="#">
+              History Data
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitem" href="#">
+              Invoice
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navitem" href="#">
+              Helps
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <br>
+            <div class="insider">
+              <nav class="navbar navbar-expand-lg">
+                <h3 class="hi">Statistics</h3>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        2019
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <option class="dropdown-item" href="#">2019</option>
+                        <option class="dropdown-item" href="#">2020</option>
+                        <option class="dropdown-item" href="#">2021</option>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Months
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <option class="dropdown-item" href="#">Jan</option>
+                        <option class="dropdown-item" href="#">Feb</option>
+                        <option class="dropdown-item" href="#">Mar</option>
+                        <option class="dropdown-item" href="#">Apr</option>
+                        <option class="dropdown-item" href="#">May</option>
+                        <option class="dropdown-item" href="#">June</option>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <br>
+            <div class="">
+              <div class="inside">
+                <h3 class="head">Earning in Months</h3>
+          <!--      <div class="circle"></div>    -->
+                <canvas class="my-4 w-100" id="pi" width="50px;" height="28.9px;"></canvas>
+                <span class="earn"><h4>75%</h4></span>
+                <hr>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 otherside">
+                      <p>Deposite:</p>
+                      <p>Expense:</p>
+                      <p>Payable:</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 side">
+                      <p><b>$20 54 1 875 574</b></p>
+                      <p><b>$54 1 875 574</b></p>
+                      <p><b>$805 875 574</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="inside1">
+              <h5 class="heading">Monthly Sales</h5><br><br>
+                <canvas class="my-4 w-100" id="month" width="50px;" height="28.9px;"></canvas>
+                <img class="downarrow ms" src="Images/down-arrow.png" alt="">
+              <form>
+                <br><br>
+  <div class="form-group bardive">
+    <label class="labelclass1" for="formControlRange"><b>65%</b></label>
+    <input type="range" class="form-control-range rangeclass" id="formControlRange" value="65">
+  </div>
+</form><br>
+              <h3>20 54 1</h3>
+              <p>Today Income</p>
+              <br><br>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="inside1">
+              <h5 class="heading">Yearly Sales</h5><br><br>
+                <canvas class="my-4 w-100 helloo" id="year" width="50px;" height="28.9px;"></canvas>
+                <img class="downarrow ys" src="Images/down-arrow.png" alt="">
+              <form><br><br>
+  <div class="form-group bardive">
+    <label class="labelclass2" for="formControlRange"><b>75%</b></label>
+    <input class="form-control-range rangeclass" type="range" value="75">
+  </div>
+</form><br>
+              <h3>20 54 125</h3>
+              <p>Today Income</p><br><br>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="inside1">
+              <h5 class="heading">Calender</h5>
+              <div class="wrapper">
+                <div class="calendar">
+                  <div class="month">
+                    <div class="prev" onclick="moveDate('prev')">
+                      <span>&#10094</span>
+                    </div>
+                    <div class="">
+                    <!--  <h2 id="month">June</h2>  -->
+                      <h3 id="date_str"></h3>
+                    </div>
+                    <div class="next" onclick="moveDate('next')">
+                      <span>&#10095</span>
+                    </div>
+                  </div>
+                  <div class="weekends">
+                    <div class="">Sun</div>
+                    <div class="">Mon</div>
+                    <div class="">Tue</div>
+                    <div class="">Wed</div>
+                    <div class="">Thr</div>
+                    <div class="">Fri</div>
+                    <div class="">Sat</div>
+                  </div>
+                  <div class="days">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<!----------------------------------------------->
+
+<!----------------------------------------------->
+
+    </main>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+        <script src="index.js"></script></body>
+</html>
